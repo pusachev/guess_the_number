@@ -1,0 +1,20 @@
+{
+    "name": "pusachev/randomizer",
+    "type": "project",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Pavel Usachov",
+            "email": "pusachev@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "symfony/console": "^5.3"
+    }
+}
