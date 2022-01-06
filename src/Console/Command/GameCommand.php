@@ -69,7 +69,7 @@ class GameCommand extends Command
             $question = new Question("Please enter your random number from 2 to 100: ");
             $question->setValidator(function ($answer) {
                 if ((int) $answer <= 1 || (int)$answer > 100) {
-                    throw new \RuntimeException("The number mus be greater than 1 and less than 100");
+                    throw new \RuntimeException("The number must be greater than 1 and less than 100");
                 }
 
                 return $answer;
