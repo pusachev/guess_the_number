@@ -6,7 +6,17 @@
 
 namespace Model;
 
+/**
+ * Interface GenerateRandomNumberInterface
+ *
+ * @package Model\
+ */
 interface GenerateRandomNumberInterface
 {
+    /**
+     * @param int $max
+     *
+     * @return int
+     */
     public function generate(int $max) : int;
 }

@@ -9,6 +9,11 @@ namespace Factory\Result;
 use Model\Result\GameResult;
 use Model\Result\GameResultInterface;
 
+/**
+ * Class GameResultFactory
+ *
+ * @package Factory\Result
+ */
 class GameResultFactory implements GameResultFactoryInterface
 {
     /** {@inheritDoc} */

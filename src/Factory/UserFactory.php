@@ -9,6 +9,11 @@ namespace Factory;
 use Entity\User;
 use Entity\UserInterface;
 
+/**
+ * Class UserFactory
+ *
+ * @package Factory
+ */
 class UserFactory implements UserFactoryInterface
 {
     /** {@inheritDoc} */

@@ -6,6 +6,11 @@
 
 namespace Model;
 
+/**
+ * Class GenerateRandomNumber
+ *
+ * @package Model
+ */
 class GenerateRandomNumber implements GenerateRandomNumberInterface
 {
     /** {@inheritDoc} */

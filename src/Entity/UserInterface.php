@@ -6,6 +6,11 @@
 
 namespace Entity;
 
+/**
+ * Interface UserInterface
+ *
+ * @package Entity
+ */
 interface UserInterface
 {
     /**

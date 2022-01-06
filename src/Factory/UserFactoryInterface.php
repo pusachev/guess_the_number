@@ -8,10 +8,16 @@ namespace Factory;
 
 use Entity\UserInterface;
 
+/**
+ * Interface UserFactoryInterface
+ *
+ * @package Factory
+ */
 interface UserFactoryInterface
 {
     /**
      * @param string $name
+     *
      * @return UserInterface
      */
     public function create(string $name) : UserInterface;

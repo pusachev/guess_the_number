@@ -6,6 +6,11 @@
 
 namespace Model\Result;
 
+/**
+ * Interface GameResultInterface
+ *
+ * @package Model\Result
+ */
 interface GameResultInterface
 {
     /**

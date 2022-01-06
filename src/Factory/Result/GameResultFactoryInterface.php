@@ -8,10 +8,15 @@ namespace Factory\Result;
 
 use Model\Result\GameResultInterface;
 
+/**
+ * Interface GameResultFactoryInterface
+ *
+ * @package Factory\Result
+ */
 interface GameResultFactoryInterface
 {
     /**
-     * @param bool $isCorrect
+     * @param bool   $isCorrect
      * @param string $message
      *
      * @return GameResultInterface

@@ -14,11 +14,15 @@ class GameHandler implements GameHandlerInterface
     /** @var GameResultFactoryInterface  */
     private $gameResultFactory;
 
+    /**
+     * @param GameResultFactoryInterface $gameResultFactory
+     */
     public function __construct(GameResultFactoryInterface $gameResultFactory)
     {
         $this->gameResultFactory = $gameResultFactory;
     }
 
+    /** {@inheritDoc} */
     public function handle(int $randNumber, int $currentNumber) : GameResultInterface
     {
         $isCorrect = false;

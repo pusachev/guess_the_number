@@ -10,8 +10,17 @@ use Symfony\Component\Console\Command\Command;
  */
 class Test extends Command
 {
+    /**
+     * @var string
+     */
     protected static $defaultName = 'app:test:test';
 
+    /**
+     * @param \Symfony\Component\Console\Input\InputInterface   $input
+     * @param \Symfony\Component\Console\Output\OutputInterface $output
+     *
+     * @return int
+     */
     protected function execute(\Symfony\Component\Console\Input\InputInterface $input, \Symfony\Component\Console\Output\OutputInterface $output)
     {
         $output->writeln(__METHOD__);

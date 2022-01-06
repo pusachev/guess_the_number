@@ -23,6 +23,12 @@ class GameCommand extends Command
     /** @var GenerateRandomNumberInterface */
     private $generator;
 
+    /**
+     * @param UserFactoryInterface          $userFactory
+     * @param GameHandlerInterface          $gameHandler
+     * @param GenerateRandomNumberInterface $generateRandomNumber
+     * @param string|null                   $name
+     */
     public function __construct(
         UserFactoryInterface $userFactory,
         GameHandlerInterface $gameHandler,
@@ -35,9 +41,12 @@ class GameCommand extends Command
         parent::__construct($name);
     }
 
-    // the name of the command (the part after "bin/console")
-    protected static $defaultName = 'app:game:start';
-
+    /**
+     * @param InputInterface  $input
+     * @param OutputInterface $output
+     *
+     * @return int
+     */
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         while (true) {

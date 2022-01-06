@@ -6,6 +6,11 @@
 
 namespace Entity;
 
+/**
+ * Class User
+ *
+ * @package Entity
+ */
 class User implements UserInterface
 {
     /** @var string */

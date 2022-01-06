@@ -17,7 +17,8 @@ $userFactory = new \Factory\UserFactory();
 $application->add(new Console\Command\GameCommand(
         $userFactory,
         $gameHandler,
-        $generator
+        $generator,
+        'app:game:start'
     )
 );
 $application->add(new Console\Command\Test());
